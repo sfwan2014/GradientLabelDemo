@@ -1,6 +1,6 @@
 # GradientLabelDemo
-渐变色Label
-#渐变色Button
+# 渐变色Label
+# 渐变色Button
 
 **截图**
 <p align="center">
