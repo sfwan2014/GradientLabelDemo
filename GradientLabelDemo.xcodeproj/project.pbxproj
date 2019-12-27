@@ -15,6 +15,10 @@
 		8E674B3823B5980800C81850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E674B3623B5980800C81850 /* LaunchScreen.storyboard */; };
 		8E674B4323B5980800C81850 /* GradientLabelDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E674B4223B5980800C81850 /* GradientLabelDemoTests.swift */; };
 		8E674B4E23B5980800C81850 /* GradientLabelDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E674B4D23B5980800C81850 /* GradientLabelDemoUITests.swift */; };
+		8E674B5E23B5982500C81850 /* DCGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E674B5C23B5982500C81850 /* DCGradientButton.swift */; };
+		8E674B5F23B5982500C81850 /* DCGradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E674B5D23B5982500C81850 /* DCGradientLabel.swift */; };
+		8E674B6123B5986600C81850 /* Extension-String-Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E674B6023B5986600C81850 /* Extension-String-Color.swift */; };
+		8E674B6323B5AE1B00C81850 /* preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E674B6223B5AE1B00C81850 /* preview.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8E674B4923B5980800C81850 /* GradientLabelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientLabelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E674B4D23B5980800C81850 /* GradientLabelDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabelDemoUITests.swift; sourceTree = "<group>"; };
 		8E674B4F23B5980800C81850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E674B5C23B5982500C81850 /* DCGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCGradientButton.swift; sourceTree = "<group>"; };
+		8E674B5D23B5982500C81850 /* DCGradientLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCGradientLabel.swift; sourceTree = "<group>"; };
+		8E674B6023B5986600C81850 /* Extension-String-Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-String-Color.swift"; sourceTree = "<group>"; };
+		8E674B6223B5AE1B00C81850 /* preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		8E674B1F23B5980700C81850 = {
 			isa = PBXGroup;
 			children = (
+				8E674B5B23B5981200C81850 /* Gradient */,
 				8E674B2A23B5980700C81850 /* GradientLabelDemo */,
 				8E674B4123B5980800C81850 /* GradientLabelDemoTests */,
 				8E674B4C23B5980800C81850 /* GradientLabelDemoUITests */,
@@ -105,6 +114,7 @@
 				8E674B3123B5980800C81850 /* Main.storyboard */,
 				8E674B3423B5980800C81850 /* Assets.xcassets */,
 				8E674B3623B5980800C81850 /* LaunchScreen.storyboard */,
+				8E674B6223B5AE1B00C81850 /* preview.png */,
 				8E674B3923B5980800C81850 /* Info.plist */,
 			);
 			path = GradientLabelDemo;
@@ -126,6 +136,16 @@
 				8E674B4F23B5980800C81850 /* Info.plist */,
 			);
 			path = GradientLabelDemoUITests;
+			sourceTree = "<group>";
+		};
+		8E674B5B23B5981200C81850 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				8E674B5C23B5982500C81850 /* DCGradientButton.swift */,
+				8E674B5D23B5982500C81850 /* DCGradientLabel.swift */,
+				8E674B6023B5986600C81850 /* Extension-String-Color.swift */,
+			);
+			path = Gradient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E674B6323B5AE1B00C81850 /* preview.png in Resources */,
 				8E674B3823B5980800C81850 /* LaunchScreen.storyboard in Resources */,
 				8E674B3523B5980800C81850 /* Assets.xcassets in Resources */,
 				8E674B3323B5980800C81850 /* Main.storyboard in Resources */,
@@ -259,9 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E674B6123B5986600C81850 /* Extension-String-Color.swift in Sources */,
 				8E674B3023B5980700C81850 /* ViewController.swift in Sources */,
 				8E674B2C23B5980700C81850 /* AppDelegate.swift in Sources */,
+				8E674B5E23B5982500C81850 /* DCGradientButton.swift in Sources */,
 				8E674B2E23B5980700C81850 /* SceneDelegate.swift in Sources */,
+				8E674B5F23B5982500C81850 /* DCGradientLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-11111.GradientLabelDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-11111.GradientLabelDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

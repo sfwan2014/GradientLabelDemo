@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 /// 标题渐变色的按钮
 class DCGradientButton: UIControl{
     
@@ -50,7 +50,7 @@ class DCGradientButton: UIControl{
     lazy var titleLabel: DCGradientLabel = {
         let label = DCGradientLabel.init(frame: .zero)
         label.textAlignment = .center
-        label.font = UIFont.init(name: pingFangRegular, size: 16)
+        label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
     

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,67 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GradientLabelDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnT-UQ-ohV" customClass="DCGradientLabel" customModule="GradientLabelDemo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="207" width="240" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="DqG-AG-S0u"/>
+                                    <constraint firstAttribute="width" constant="240" id="HK8-Qs-yL9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rT-bs-JzB" customClass="DCGradientLabel" customModule="GradientLabelDemo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="263" width="240" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="LRv-bc-LSC"/>
+                                    <constraint firstAttribute="width" constant="240" id="XRn-Bz-GC7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmU-eD-a6D" customClass="DCGradientLabel" customModule="GradientLabelDemo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="376" width="240" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5hQ-c0-1vk"/>
+                                    <constraint firstAttribute="width" constant="240" id="kK9-7O-WWo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OxQ-l8-blW" customClass="DCGradientButton" customModule="GradientLabelDemo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="461" width="240" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="JLA-P0-1Fz"/>
+                                    <constraint firstAttribute="height" constant="44" id="lqg-nN-gYy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bnT-UQ-ohV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1d4-fD-LVu"/>
+                            <constraint firstItem="bnT-UQ-ohV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="Mkr-sj-tJG"/>
+                            <constraint firstItem="HmU-eD-a6D" firstAttribute="top" secondItem="7rT-bs-JzB" secondAttribute="bottom" constant="77" id="NfK-oB-LuU"/>
+                            <constraint firstItem="OxQ-l8-blW" firstAttribute="top" secondItem="HmU-eD-a6D" secondAttribute="bottom" constant="45" id="OoX-Sq-8w1"/>
+                            <constraint firstItem="HmU-eD-a6D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Roq-4e-xEy"/>
+                            <constraint firstItem="OxQ-l8-blW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cr1-qi-REt"/>
+                            <constraint firstItem="7rT-bs-JzB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k9X-ds-E9s"/>
+                            <constraint firstItem="7rT-bs-JzB" firstAttribute="top" secondItem="bnT-UQ-ohV" secondAttribute="bottom" constant="20" id="u78-Pt-j3f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="OxQ-l8-blW" id="hWR-Qm-H9h"/>
+                        <outlet property="contentLabel" destination="7rT-bs-JzB" id="nDx-4M-AZ1"/>
+                        <outlet property="text2" destination="HmU-eD-a6D" id="yh5-vG-RlG"/>
+                        <outlet property="titleLabel" destination="bnT-UQ-ohV" id="iMH-oS-GCl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
