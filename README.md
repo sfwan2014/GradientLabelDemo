@@ -4,6 +4,6 @@
 
 **截图**
 <p align="center">
-<img src="https://raw.githubusercontent.com/sfwan2014/BadgeSegment/master/CustomeBadgeSegmentDemo/example.png" alt="Kingfisher" title="Kingfisher" width="260"/>
+<img src="https://github.com/sfwan2014/GradientLabelDemo/blob/master/GradientLabelDemo/preview.png?raw=true" alt="Example" title="Kingfisher" width="260"/>
 </p>
 
